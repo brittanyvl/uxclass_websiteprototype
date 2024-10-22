@@ -1,4 +1,3 @@
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -9,11 +8,8 @@ body {
     background-color: rgb(255, 252, 245);
     font-family: 'Trebuchet MS', sans-serif;
     display: flex;
-    /* Enable Flexbox on the body */
     flex-direction: column;
-    /* Arrange child elements in a column */
     min-height: 100vh;
-    /* Minimum height of 100% of the viewport height */
     background-color: rgb(255, 252, 245);
     font-family: 'Trebuchet MS', sans-serif;
 }
@@ -71,14 +67,116 @@ nav ul li a:hover {
     background-color: #2A9D8F;
 }
 
-/* Layout styling */
+/* Hero Banner Styling */
+.hero-banner {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+    height: 33vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.citation {
+    font-size: 14px;
+    font-family: monospace;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.citation-home {
+    font-size: 9px;
+    font-family: monospace;
+    text-align: right;
+    margin-right: 5px;
+    margin-top: -15px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #56CFE1;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #2A9D8F;
+}
+
+/* Content Layout */
+.content-layout {
+    display: flex;
+    padding: 20px;
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 3;
+    background-color: #FFF;
+    padding: 15px;
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content p {
+    margin: 8px;
+}
+
+/* Featured Travel Agents */
+.featured-agents {
+    flex: 1;
+    background-color: #c6f5fc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.featured-agents h1 {
+    font-size: 18px;
+    color: #1E6091;
+    margin-bottom: 10px;
+}
+
+.featured-agents ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.featured-agents ul li {
+    margin-bottom: 10px;
+}
+
+.featured-agents ul li a {
+    text-decoration: none;
+    color: #1E6091;
+    transition: color 0.3s;
+}
+
+.featured-agents ul li a:hover {
+    color: #2A9D8F;
+}
+
+/* Side Page Layout styling */
 .layout {
     display: grid;
     grid-template-columns: 25% 50% 25%;
     gap: 20px;
     padding: 20px;
     flex-grow: 1;
-    /* Ensures the layout takes remaining space */
 }
 
 /* Left Sidebar */
@@ -99,41 +197,29 @@ nav ul li a:hover {
 /* List styling */
 .left-column ul {
     list-style-type: none;
-    /* Remove default bullets */
     padding: 0;
-    /* Remove default padding */
 }
 
 /* List item styling */
 .left-column ul li {
     margin-bottom: 10px;
-    /* Space between each list item */
 }
 
 /* Link styling */
 .left-column ul li a {
     display: block;
-    /* Make the link fill the entire list item */
     padding: 10px;
-    /* Add padding for clickable area */
     text-decoration: none;
-    /* Remove underline */
     color: #FFFFFF;
-    /* White text color */
     background-color: #56CFE1;
-    /* Light blue background */
     border-radius: 4px;
-    /* Slightly rounded corners */
     transition: background-color 0.3s, transform 0.3s;
-    /* Smooth transitions */
 }
 
 /* Hover effect */
 .left-column ul li a:hover {
     background-color: #2A9D8F;
-    /* Darker blue on hover */
     transform: scale(1.05);
-    /* Slightly enlarge on hover */
 }
 
 /* Center Column */
@@ -196,41 +282,31 @@ nav ul li a:hover {
 /* Box Headings */
 .box h1 {
     font-size: 24px;
-    /* Font size for headings */
     color: #1E6091;
-    /* Dark blue color for the headings */
     margin-bottom: 15px;
-    /* Space below the heading */
 }
 
 /* List Styling */
 .box ul {
     list-style-type: none;
-    /* Remove bullet points */
     padding: 0;
-    /* Remove default padding */
 }
 
 /* List Items */
 .box ul li {
     margin-bottom: 10px;
-    /* Space between list items */
 }
 
 /* Links */
 .box a {
     text-decoration: none;
-    /* Remove underline from links */
     color: #1E6091;
-    /* Dark blue color for links */
     transition: color 0.3s;
-    /* Smooth transition for hover effect */
 }
 
 /* Link Hover Effect */
 .box a:hover {
     color: #2A9D8F;
-    /* Change color on hover */
 }
 
 .citation {
@@ -245,7 +321,6 @@ nav ul li a:hover {
     color: white;
     padding: 20px;
     text-align: center;
-    /*margin-top: auto;*/
 }
 
 .footer-content {
