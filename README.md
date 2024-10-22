@@ -1,2 +1,3 @@
-# uxclass_websiteprototype
-This project is for a school assignment requiring a prototype be hosted for evaluation by my classmates.  
+# D479 Prototype
+
+This project is intended for my UX coursework and will be evaluated by my peers. 

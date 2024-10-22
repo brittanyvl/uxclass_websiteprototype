@@ -1,0 +1,296 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 252, 245);
+    font-family: 'Trebuchet MS', sans-serif;
+    display: flex;
+    /* Enable Flexbox on the body */
+    flex-direction: column;
+    /* Arrange child elements in a column */
+    min-height: 100vh;
+    /* Minimum height of 100% of the viewport height */
+    background-color: rgb(255, 252, 245);
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.logo {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 36px;
+    color: #1E6091;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding-left: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #1E6091;
+
+}
+
+.logo:hover {
+    text-decoration: none;
+    color: #1E6091;
+}
+
+header {
+    background-color: rgb(255, 252, 245);
+    padding-top: .25vh;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1E6091;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    background-color: #56CFE1;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #2A9D8F;
+}
+
+/* Layout styling */
+.layout {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    gap: 20px;
+    padding: 20px;
+    flex-grow: 1;
+    /* Ensures the layout takes remaining space */
+}
+
+/* Left Sidebar */
+.left-column {
+    background-color: #c6f5fc;
+    padding: 15px;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-column h1 {
+    padding: 15px;
+    text-align: center;
+    color: #1E6091;
+}
+
+/* List styling */
+.left-column ul {
+    list-style-type: none;
+    /* Remove default bullets */
+    padding: 0;
+    /* Remove default padding */
+}
+
+/* List item styling */
+.left-column ul li {
+    margin-bottom: 10px;
+    /* Space between each list item */
+}
+
+/* Link styling */
+.left-column ul li a {
+    display: block;
+    /* Make the link fill the entire list item */
+    padding: 10px;
+    /* Add padding for clickable area */
+    text-decoration: none;
+    /* Remove underline */
+    color: #FFFFFF;
+    /* White text color */
+    background-color: #56CFE1;
+    /* Light blue background */
+    border-radius: 4px;
+    /* Slightly rounded corners */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Smooth transitions */
+}
+
+/* Hover effect */
+.left-column ul li a:hover {
+    background-color: #2A9D8F;
+    /* Darker blue on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+}
+
+/* Center Column */
+.center-column {
+    background-color: #FFF;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 0px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+    height: auto;
+}
+
+/* Headings */
+.center-column h2 {
+    font-size: 28px;
+    color: #1E6091;
+    margin: 20px 0 10px;
+    border-bottom: 2px solid #5a95fc;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+/* Paragraphs */
+.center-column p {
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    background-color: rgba(86, 207, 225, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* Right Sidebar */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 50%;
+}
+
+/* Right Sidebar Content Boxes */
+.box {
+    background-color: #c6f5fc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+/* Box Headings */
+.box h1 {
+    font-size: 24px;
+    /* Font size for headings */
+    color: #1E6091;
+    /* Dark blue color for the headings */
+    margin-bottom: 15px;
+    /* Space below the heading */
+}
+
+/* List Styling */
+.box ul {
+    list-style-type: none;
+    /* Remove bullet points */
+    padding: 0;
+    /* Remove default padding */
+}
+
+/* List Items */
+.box ul li {
+    margin-bottom: 10px;
+    /* Space between list items */
+}
+
+/* Links */
+.box a {
+    text-decoration: none;
+    /* Remove underline from links */
+    color: #1E6091;
+    /* Dark blue color for links */
+    transition: color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+/* Link Hover Effect */
+.box a:hover {
+    color: #2A9D8F;
+    /* Change color on hover */
+}
+
+.citation {
+    font-size: 2px;
+    font-family: monospace;
+    text-align: center;
+    padding: 0;
+}
+
+.footer {
+    background-color: #1E6091;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    /*margin-top: auto;*/
+}
+
+.footer-content {
+    margin: 0 auto;
+}
+
+.footer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #56CFE1;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #2A9D8F;
+}
+
+.footer-socials a {
+    color: #56CFE1;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+    color: #2A9D8F;
+}
+
+.footer p:last-child {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+}
